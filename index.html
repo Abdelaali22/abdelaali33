@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDELAALI APP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- ترويسة -->
+    <header>
+        <h1>ABDELAALI APP</h1>
+        <div class="icons-container">
+            <button id="themeToggle" class="icon-btn">
+                <i id="sunIcon" class="fas fa-sun"></i>
+                <i id="moonIcon" class="fas fa-moon"></i>
+            </button>
+            <button class="icon-btn" id="micButton">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- حاوية المحتوى -->
+    <div class="container">
+        <h2>قائمة التسوق الخاصة بك</h2>
+        <div class="form-container">
+            <div class="input-group">
+                <label for="itemName">أدخل العنصر:</label>
+                <input type="text" id="itemName" placeholder="اكتب العنصر هنا..." />
+            </div>
+            <div class="input-group">
+                <label for="itemQuantity">الكمية:</label>
+                <input type="number" id="itemQuantity" placeholder="1" min="1" />
+            </div>
+            <button id="addItemBtn">إضافة العنصر</button>
+        </div>
+        <ul id="itemsList"></ul>
+    </div>
+</body>
+</html>
